@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset= "utf-8">
+		
+		<link rel = "stylesheet" href="main.css"/>
+	
+	<script>
+	/*
+	
+	var degisken = setTimeout(fonksiyon,sure)
+	clearTimeout(degisken)
+	
+	var degisken = setInterval(fonksiyon,sure)
+	clearInterval(degisken)
+	
+	*/
+	
+	var say = 5;
+	var indirme;
+	var sure; 
+	function baslat(){
+	
+		 indirme = setTimeout(dosyaindirme,5000); //5 saniye oluyo bu
+		
+		sureyisay(); //burda cagriyoruz cunku eger cagirmazsak 1 saniye sonra baslar
+		 sure = setInterval(sureyisay,1000);
+		
+		
+	
+	
+	
+	}
+	
+	function dosyaindirme(){
+		window.alert("dosya inmeye basladi...");
+		
+		document.getElementById("para").innerHTML="";
+
+		say=5;
+		
+	
+	
+	}
+	
+	function sureyisay(){
+	
+	document.getElementById("para").innerHTML="Dosya " + say + " saniye icinde inecek...";
+	say--;
+	
+	if(say==0){
+		clearInterval(sure);
+		
+	
+	}
+	
+	}
+	
+	function islemleridurdur(){
+	
+		clearInterval(sure);
+		clearTimeout(indirme);
+	
+		document.getElementById("para").innerHTML = "dosya indirilmesi durduruldu...";
+	
+		say = 5;
+	}
+	
+	</script>
+	</head>
+		
+	<body>
+	
+	<p> Dosyayi indirmek icin tiklayin </p>
+	
+	<p id="para"></p>
+	
+	<button onclick="baslat()"> Indirmek icin Tiklayin </button>
+	<button onclick="islemleridurdur()"> Iptal etmek icin Tiklayin </button>
+	
+	</body>
+
+
+</html>

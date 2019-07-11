@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset= "utf-8">
+		
+		<link rel = "stylesheet" href="main.css"/>
+	
+	<script>
+	
+	
+	function degistir(){
+		
+		var element = document.getElementById("para3");
+		
+		var parent = element.parentNode;  //childden parente erisme
+		
+		parent.style.color="red";
+	}
+	
+	
+	function kardes(){
+		
+		var element = document.getElementById("para3");
+		
+		var kardes = element.previousElementSibling.previousElementSibling;  //childden kardese erisme onceki kardese erisim(.previousElementSibling daha onceki kardese erisim) sonraki kardes ise nextElementSibling
+		
+		kardes.style.color="blue"
+	}
+	</script>
+	</head>
+		
+	<body>
+	
+	<div id="anakisim" style="background-color:#eeeee">
+		<p>
+			
+			Το σύνθημά της είναι «Ελευθερία, Ισότητα, Αδερφοσύνη»,
+		και η σημαία της αποτελείται από τρεις κάθετες λωρίδες χρώματος μπλε,
+		άσπρου και κόκκινου. Ο ύμνος της είναι Η Μασσαλιώτιδα.
+		Η συνταγματική αρχή της είναι «κυβέρνηση του λαού, από τον λαό και υπέρ του λαού»[4].
+			
+		</p>
+	<p>
+	
+	Το σύνθημά της είναι «Ελευθερία, Ισότητα, Αδερφοσύνη»,
+		και η σημαία της αποτελείται από τρεις κάθετες λωρίδες χρώματος μπλε,
+		άσπρου και κόκκινου. Ο ύμνος της είναι Η Μασσαλιώτιδα.
+		Η συνταγματική αρχή της είναι «κυβέρνηση του λαού, από τον λαό και υπέρ του λαού»[4].
+		
+		</p>
+		
+		<p id="para3">
+	
+	Το σύνθημά της είναι «Ελευθερία, Ισότητα, Αδερφοσύνη»,
+		και η σημαία της αποτελείται από τρεις κάθετες λωρίδες χρώματος μπλε,
+		άσπρου και κόκκινου. Ο ύμνος της είναι Η Μασσαλιώτιδα.
+		Η συνταγματική αρχή της είναι «κυβέρνηση του λαού, από τον λαό και υπέρ του λαού»[4].
+		
+		</p>
+		
+		<p>
+	
+	Το σύνθημά της είναι «Ελευθερία, Ισότητα, Αδερφοσύνη»,
+		και η σημαία της αποτελείται από τρεις κάθετες λωρίδες χρώματος μπλε,
+		άσπρου και κόκκινου. Ο ύμνος της είναι Η Μασσαλιώτιδα.
+		Η συνταγματική αρχή της είναι «κυβέρνηση του λαού, από τον λαό και υπέρ του λαού»[4].
+		
+		</p>
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	<button onclick="degistir()">degistir</button>
+	<button onclick="kardes()">degistir2</button>
+	
+	</body>
+
+
+</html>

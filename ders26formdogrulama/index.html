@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset= "itf-8">
+		
+		<link rel = "stylesheet" href="main.css"/>
+
+	</head>
+
+
+		<script>
+			function dogrula(){
+			
+		/*	var deger=document.formisim.isim.value;
+			
+			if(deger == ""){
+				window.alert("Isim alani bos birakilamaz...");
+				return false;
+			}
+			
+			*/
+			
+			
+			var deger = document.getElementById("girdi").value;
+			
+			if(isNaN(deger)==true){
+				
+				window.alert("input gecersiz");
+			
+			}
+			else
+				window.alert("input gecerli");
+			
+			}
+			
+			
+		</script>
+	
+		
+	<body>
+		
+		<!-- <form name="formisim" action="gonder.php" onsubmit="return dogrula()" method="post">
+		
+		
+		Isim Alani:<input type = "text" name="isim">
+		
+		<input type = "submit" value="gonder">
+	
+		</form> -->
+		
+		
+		<input id = "girdi"><br>
+		
+		<button onclick="dogrula()">Kontrol Et </button>
+	
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+	
+		<meta charset ="utf-8">
+		
+		<link rel="stylesheet" href="main.css"/>
+		
+
+	</head>
+
+	<script>
+		
+		var insanlar = ["Emre", "Murat", "Yazilim Bilimi"];
+		var x = [32,3.14,true,false,"Ne"];
+		
+		var x = insanlar.toString();
+		
+		//document.write(x);
+		
+		var tarih = ["10","1","19"];
+		var yazi=tarih.join("/");
+		//document.write(yazi);
+		
+		var sayilar=[1,2,3,4,5,6,7,8,9];
+		
+		sayilar.pop();
+		
+		var y = sayilar.pop();
+		
+		
+		document.write(sayilar);
+		
+		document.write("<br>" + y);
+		
+		sayilar.push(200);
+		
+		document.write("<br>" + sayilar);
+		
+		var c = [1,2,3,4,5,6,7,8,9];
+		
+		c[4]=100;
+		
+		document.write("<br>" + c);
+		
+		insanlar.sort();
+		
+		document.write("<br>" + insanlar);
+		
+		insanlar.reverse();
+		
+		document.write("<br>" + insanlar);
+		
+		
+		c.sort(function(a,b){return a-b});
+		
+		document.write(c);
+		
+		
+		
+	</script>
+	
+
+	<body>
+	
+	
+		
+	</body>
+
+
+</html>

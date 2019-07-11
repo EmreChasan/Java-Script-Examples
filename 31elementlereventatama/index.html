@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset= "utf-8">
+		
+		<link rel = "stylesheet" href="main.css"/>
+
+	</head>
+		<script>
+		
+		
+		</script>
+	
+	<body>
+	<style>
+	div {
+		width:200px;
+		height:200px;
+		background:red;
+		text-align:center;
+	
+	
+	}
+	
+	</style>
+	<div id="div1">
+	Yazilim Bilimi
+		
+	</div>	
+		<img id="resim" src="greece.jpg" width="200px" height="200px"/>	
+	<script>
+	var div= document.getElementById("div1");
+	
+	div.onclick = function(){
+	
+		this.innerHTML = "Emre Chasan";
+	
+	}
+	
+	var resim = document.getElementById("resim");
+	
+	resim.onmouseover=function(){
+	
+		this.src="france.jpg";
+	
+	}
+	resim.onmouseout=function(){
+	
+		this.src="greece.jpg";
+	
+	}
+	//onmouseover
+	//onmouseout
+	
+	</script>
+	
+	</body>
+
+
+</html>

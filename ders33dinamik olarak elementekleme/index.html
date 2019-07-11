@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset= "utf-8">
+		
+		<link rel = "stylesheet" href="main.css"/>
+	
+	
+	<script>
+	function yenikisim(){
+	
+	var metin=document.getElementById("textarea").value;
+	
+	var yenielement= document.createElement("p");
+	
+	var icerik = document.createTextNode(metin);
+	
+	yenielement.appendChild(icerik);
+	
+	var anakisim= document.getElementById("anakisim");
+	
+	anakisim.appendChild(yenielement);
+	
+	}
+	
+	</script>
+	</head>
+		
+	<body>
+	<div id="anakisim" style="background-color:">
+	<h3> Birinci Hikaye </h3>
+		<p>
+			
+			Το σύνθημά της είναι «Ελευθερία, Ισότητα, Αδερφοσύνη»,
+		και η σημαία της αποτελείται από τρεις κάθετες λωρίδες χρώματος μπλε,
+		άσπρου και κόκκινου. Ο ύμνος της είναι Η Μασσαλιώτιδα.
+		Η συνταγματική αρχή της είναι «κυβέρνηση του λαού, από τον λαό και υπέρ του λαού»[4].
+			
+		</p>
+	<h3> Ikinci Hikaye </h3>
+	<p>
+	
+	Το σύνθημά της είναι «Ελευθερία, Ισότητα, Αδερφοσύνη»,
+		και η σημαία της αποτελείται από τρεις κάθετες λωρίδες χρώματος μπλε,
+		άσπρου και κόκκινου. Ο ύμνος της είναι Η Μασσαλιώτιδα.
+		Η συνταγματική αρχή της είναι «κυβέρνηση του λαού, από τον λαό και υπέρ του λαού»[4].
+		
+		</p>
+	
+	
+	
+	
+	</div>
+	<textarea id="textarea" rows="10" cols="30"></textarea>
+	
+	<button onclick="yenikisim()">Yeni Kisim Ekle</button> 
+	
+	
+	</body>
+
+
+</html>
